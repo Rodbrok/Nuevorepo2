@@ -11,14 +11,34 @@
                div.innerHTML = 'Contenido cambiado';
         }
         
+        //Funcion de suma
+        function sumar(){
+            let num1 = 4;
+            let num2 = 10;
+            let suma = num1 + num2;
+
+            let div = document.getElementById('suma');
+                div.innerHTML = '<h2>Resultado; '+ suma +'</h2>';
+
+        }
+
+
     </script>
+    
 </head>
 <body>
     <div id="miDiv">Contenido original</div>
     <button onclick="cambiarContenido()">Cambiar Contenido</button>
+    <section>
+        !!!vamos a calcular¡¡¡
+        <br>
+        <div id="suma">
+            Resultado:
+        </div>
+        <button onclick="sumar()">Ver resultado</button>
+    </section>
 </body>
 </html>
-
 
 
 

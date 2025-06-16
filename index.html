@@ -3,45 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>hola</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-       function cambiarContenido() {
-           let div = document.getElementById('miDiv');
-               div.innerHTML = 'Contenido cambiado';
-        }
-        
-        //Funcion de suma
-    
-        function sumar(){
-            let num1 = 4;
-            let num2 = 10;
-            let suma = num1 + num2;
-
-            let div = document.getElementById('suma');
-                div.innerHTML = '<h2>Resultado; '+ suma +'</h2>';
-
-        }
-
-        
-
-    </script>
-    
 </head>
+
 <body>
-    <div id="miDiv">Contenido original</div>
-    <button onclick="cambiarContenido()">Cambiar Contenido</button>
-    <section>
-        !!!vamos a calcular¡¡¡
-        <br>
-        <div id="suma">
-            Resultado:
+
+    <header>
+        <div class="container">
+          <img src="Yo.jpg" alt="Foto de Rodrigo" class="perfil">
+          <h1>Rodrigo Barra</h1>
+          <p>Estudiante/Asistente Técnico </p>
+          <a href="#features" class="btn">Avanzar</a>
         </div>
-        <button onclick="sumar()">Ver resultado</button>
-    </section>
+      </header>
+      
+<section id="features">
+    <div class="container">
+       
+    </div>
+</section>
+<h1 class="separado">Acerca de mí</h1>
+<ul>
+    <li>Cursando el segundo año de Analista Programador.</li>
+    <li>Preparándome para entrar a Ingeniería en Ciberseguridad.</li>
+    <li>Actualmente, trabajo como asistente técnico.</li>
+</ul>
+
+<h1 class="separado">Hobbies</h1>
+<p>Tocar piano.</p>
+<p>Impresión en 3D.</p>
+<p>Tecladista en banda de rock.</p>
+<p>Entrenar Muay thai y Kick Boxing.</p>
+<q>Pincha aquí>></q>
+
+<a href="https://www.youtube.com/watch?v=uScPaUe1KFM">Video Banda</a>
+    
+    
+
+    <table>
+        <h3>Logros</h3>
+        <ol>
+            <li>Premiado como el mejor vendedor el 2008.</li>
+            <li>Ascendido a jefe de tienda el 2015.</li>
+            <li>Ganador de viaje a Google, en Silicon Valley, California.</li>
+        </ol>
+        <tr>
+         
+            <h4>Ingresa tu correo para contactarme</h4>
+        </tr>
+       
+    </table>
+
+    <form action="/submit" method="post">
+        <label for="nombre">Correo:</label>
+        <input type="text" id="nombre" name="nombre">
+        <button type="submit">Enviar</button>
+    </form>
+
+    
+    <footer>
+        <div class="container">
+            <p>¡Gracias por visitarme!</p>
+        </div>
+        
+    <span style="color: rgba(41, 50, 63, 0.521);">Creado por Rodrigo Barra, D3D_chile.</span>
+    </footer>   
+        
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br><br>
+        <button type="submit">Enviar</button>
+       </form>
+       <div id="errores"></div>
+
 </body>
 </html>
-
-
-
-</html5>
